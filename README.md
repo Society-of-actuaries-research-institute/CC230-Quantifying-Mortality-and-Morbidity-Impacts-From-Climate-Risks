@@ -698,7 +698,7 @@ Potential enhancements include:
 
 ## Suggested citation
 
-Arocha, C. and Crugnola-Humbert, J. (2026). **CC230 Toolkit: Modeling resources supporting the assessment of climate-related impacts on mortality and morbidity.** Arocha-Associates GitHub repository.
+to be added
 
 ---
 
