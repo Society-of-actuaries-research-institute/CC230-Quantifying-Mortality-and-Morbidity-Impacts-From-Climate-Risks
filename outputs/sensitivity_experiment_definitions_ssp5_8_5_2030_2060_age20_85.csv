@@ -1,0 +1,13 @@
+experiment_type,experiment_name,excluded_component,w_temp_anomaly,w_extreme_heat_days,w_heatwave_duration,experiment_code,lambda_factor
+C_weights,C1_base_20_70_10,none,0.2,0.7,0.1,C1,
+C_weights,C2_equal_weights_33_33_33,none,0.3333333333333333,0.3333333333333333,0.3333333333333333,C2,
+C_weights,C3_duration_heavy_25_35_40,none,0.25,0.35,0.4,C3,
+C_weights,C4_temp_heavy_60_25_15,none,0.6,0.25,0.15,C4,
+component_exclusion,E1_base_20_70_10,none,0.2,0.7,0.1,E1,
+component_exclusion,E2_excl_temp_anomaly,temp_anomaly,0.0,0.875,0.12500000000000003,E2,
+component_exclusion,E3_excl_extreme_heat_days,extreme_heat_days,0.6666666666666666,0.0,0.3333333333333333,E3,
+component_exclusion,E4_excl_heatwave_duration,heatwave_duration,0.22222222222222227,0.7777777777777778,0.0,E4,
+lambda_shock,L1_lambda_50pct,not_applicable,,,,L1,0.5
+lambda_shock,L2_lambda_100pct,not_applicable,,,,L2,1.0
+lambda_shock,L3_lambda_150pct,not_applicable,,,,L3,1.5
+lambda_shock,L4_lambda_200pct,not_applicable,,,,L4,2.0

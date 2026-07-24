@@ -1,0 +1,79 @@
+scenarios:
+  - id: "REF_NO_CLIMATE"
+    label: "Reference (no climate adjustment)"
+    family: "reference"
+    description: >
+      Best-case reference benchmark that excludes climate hazard adjustments.
+      Included for comparison only; not intended to represent a best estimate.
+    hazards_included: []   
+    sources:
+      - name: "Internal reference benchmark"
+        citation: "Defined in report methodology"
+    files: {}         
+# ----------------------------------------------------------------------------------------------
+  - id: "SSP1_2_6"
+    label: "Lower physical risk pathway (SSP1-2.6)"
+    family: "IPCC_AR6"
+    description: >
+      Scenario-based pathway aligned to IPCC AR6 SSP–RCP framework; used to
+      construct hazard trajectories by region for temperature and related indices.
+    hazards_included: ["temp_anomaly", "extreme_heat_days", "pm25"]
+    sources:
+      - name: "IPCC AR6 SSP–RCP pathways"
+        citation: "IPCC AR6 scenario framework (SSP1-2.6)"
+      - name: "Copernicus Climate Change Service"
+        citation: "Copernicus (observations/reanalysis for historical anchoring where used)"
+    files:
+      temp_anomaly: "../toolkit/data/raw/climate/temperature_anomaly/ssp1_2_6_country_annual.csv"
+      extreme_heat_days: "../data/raw/climate/extreme_heat_days/ssp1_2_6_country_annual.csv"
+      pm25: "../data/raw/climate/pm25/ssp1_2_6_country_annual.csv"
+# ----------------------------------------------------------------------------------------------
+  - id: "SSP2_4_5"
+    label: "Intermediate pathway (SSP2-4.5)"
+    family: "IPCC_AR6"
+    description: >
+      Scenario-based pathway used for mid-range physical risk; supports comparison
+      across internally consistent climate assumptions.
+    hazards_included: ["temp_anomaly", "extreme_heat_days", "pm25"]
+    sources:
+      - name: "IPCC AR6 SSP–RCP pathways"
+        citation: "IPCC AR6 scenario framework (SSP2-4.5)"
+      - name: "Copernicus Climate Change Service"
+        citation: "Copernicus (observations/reanalysis for historical anchoring where used)"
+    files:
+      temp_anomaly: "../data/raw/climate/temperature_anomaly/ssp2_4_5_country_annual.csv"
+      extreme_heat_days: "../data/raw/climate/extreme_heat_days/ssp2_4_5_country_annual.csv"
+      pm25: "../data/raw/climate/pm25/ssp2_4_5_country_annual.csv"
+# ----------------------------------------------------------------------------------------------
+  - id: "SSP5_8_5"
+    label: "Higher physical risk pathway (SSP5-8.5)"
+    family: "IPCC_AR6"
+    description: >
+      Scenario-based pathway representing higher physical risk; used for stress
+      testing and long-horizon sensitivity.
+    hazards_included: ["temp_anomaly", "extreme_heat_days", "pm25"]
+    sources:
+      - name: "IPCC AR6 SSP–RCP pathways"
+        citation: "IPCC AR6 scenario framework (SSP5-8.5)"
+      - name: "Copernicus Climate Change Service"
+        citation: "Copernicus (observations/reanalysis for historical anchoring where used)"
+    files:
+      temp_anomaly: "../data/raw/climate/temperature_anomaly/ssp5_8_5_country_annual.csv"
+      extreme_heat_days: "../data/raw/climate/extreme_heat_days/ssp5_8_5_country_annual.csv"
+      pm25: "../data/raw/climate/pm25/ssp5_8_5_country_annual.csv"
+# ----------------------------------------------------------------------------------------------
+  - id: "NGFS_ORDERLY"
+    label: "NGFS Orderly (physical risk channel)"
+    family: "NGFS"
+    description: >
+      NGFS scenario family (Orderly) used as an alternative scenario narrative.
+      Hazard trajectories should be mapped consistently to the model’s hazard variables.
+    hazards_included: ["temp_anomaly", "extreme_heat_days", "pm25"]
+    sources:
+      - name: "NGFS Climate Scenarios"
+        citation: "NGFS scenario framework (Orderly)"
+    files:
+      temp_anomaly: "../data/raw/climate/temperature_anomaly/ngfs_orderly_country_annual.csv"
+      extreme_heat_days: "../data/raw/climate/extreme_heat_days/ngfs_orderly_country_annual.csv"
+      pm25: "../data/raw/climate/pm25/ngfs_orderly_country_annual.csv"
+# ----------------------------------------------------------------------------------------------

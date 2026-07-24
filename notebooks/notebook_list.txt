@@ -1,0 +1,6 @@
+01_data_ingestion_and_preparation.ipynb
+02_climate_features.ipynb
+03_baseline_mortality_model.ipynb
+04_climate_calibration.ipynb
+05_projection_engine.ipynb
+06_sensitivity_and_validation.ipynb

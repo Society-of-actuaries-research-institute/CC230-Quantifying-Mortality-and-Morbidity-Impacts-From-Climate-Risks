@@ -1,0 +1,5 @@
+metric,value
+rmse_baseline_residual,0.056036091395086945
+rmse_residual_after_climate,0.05016419884141427
+mean_baseline_residual,1.973729821555834e-17
+mean_residual_after_climate,1.8840148296669324e-17

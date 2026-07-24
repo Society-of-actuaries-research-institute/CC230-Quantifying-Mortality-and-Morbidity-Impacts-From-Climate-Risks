@@ -1,0 +1,92 @@
+{
+    "notebook": "01_data_ingestion_and_preparation.ipynb",
+    "created_at_utc": "2026-07-21T07:04:19.478561+00:00",
+    "project_root": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit",
+    "data_path": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data",
+    "raw_data_path": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\raw",
+    "processed_data_path": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed",
+    "interim_data_path": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\interim",
+    "output_path": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\outputs",
+    "scenario": "ssp5_8_5",
+    "countries": [
+        "ES",
+        "FR",
+        "IT"
+    ],
+    "country_boxes": {
+        "ES": {
+            "lat_min": 36.0,
+            "lat_max": 43.7,
+            "lon_min": -9.5,
+            "lon_max": 2.7
+        },
+        "FR": {
+            "lat_min": 42.5,
+            "lat_max": 51.0,
+            "lon_min": -5.0,
+            "lon_max": 8.0
+        },
+        "IT": {
+            "lat_min": 37.0,
+            "lat_max": 47.0,
+            "lon_min": 6.5,
+            "lon_max": 18.0
+        }
+    },
+    "calibration_start_year": 2004,
+    "calibration_end_year": 2025,
+    "excluded_calibration_years": [
+        2020,
+        2021
+    ],
+    "calibration_years": [
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2022,
+        2023,
+        2024,
+        2025
+    ],
+    "n_calibration_years": 20,
+    "calibration_years_label": "2004_2025_excl_2020_2021",
+    "projection_start_year": 2030,
+    "projection_end_year": 2060,
+    "age_min": 20,
+    "age_max": 85,
+    "age_range_label": "age20_85",
+    "fixed_heat_threshold_c": 30.0,
+    "heat_percentile_threshold": 0.95,
+    "heat_percentile_label": 95,
+    "min_heatwave_length_days": 6,
+    "heat_extreme_days_fixed_col": "extreme_heat_days_30c",
+    "heat_extreme_days_percentile_col": "extreme_heat_days_p95",
+    "heatwave_days_col": "heatwave_days_p95_6d",
+    "heat_threshold_col": "threshold_p95_c",
+    "w_temp_anomaly": 0.2,
+    "w_extreme_heat_days": 0.7,
+    "w_heatwave_duration": 0.1,
+    "files": {
+        "mortality_output_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\mortality\\country_age_year_2004_2025_excl_2020_2021_age20_85.csv",
+        "temperature_anomaly_era5_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\climate\\temperature_anomaly_country_annual_era5_2004_2025_excl_2020_2021.csv",
+        "temperature_anomaly_cmip6_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\climate\\temperature_anomaly_country_annual_cmip6_ssp5_8_5_2030_2060.csv",
+        "temperature_anomaly_combined_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\climate\\temperature_anomaly_country_annual_combined_era5_cmip6_ssp5_8_5.csv",
+        "heat_metrics_era5_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\climate\\heat_metrics_country_annual_era5_2004_2025_excl_2020_2021.csv",
+        "heat_thresholds_era5_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\climate\\heat_thresholds_country_era5_2004_2025_excl_2020_2021.csv",
+        "heat_metrics_cmip6_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\climate\\heat_metrics_country_annual_cmip6_ssp5_8_5_2030_2060.csv",
+        "heat_metrics_combined_file": "C:\\Users\\ca\\OneDrive\\Documents\\@ PROJECTS\\CC230-Toolkit\\data\\processed\\climate\\heat_metrics_country_annual_combined_era5_cmip6_ssp5_8_5.csv"
+    }
+}

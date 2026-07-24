@@ -1,0 +1,17 @@
+metric,value
+n_observations,3960.0
+n_countries,3.0
+first_calibration_year,2004.0
+last_calibration_year,2025.0
+n_lambda_estimated,198.0
+n_lambda_missing,0.0
+mean_baseline_residual,1.973729821555834e-17
+mean_residual_after_climate,2.0185873175002847e-17
+rmse_baseline_residual,0.056036091395086945
+rmse_residual_after_climate,0.050164198841414306
+rmse_change,-0.005871892553672639
+rmse_change_pct,-10.478768963867218
+mae_baseline_residual,0.04020535108293134
+mae_residual_after_climate,0.03526192127662815
+mae_change,-0.00494342980630319
+mae_change_pct,-12.295452404100157

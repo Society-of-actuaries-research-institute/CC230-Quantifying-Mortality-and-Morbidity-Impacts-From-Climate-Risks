@@ -1,0 +1,4 @@
+component,weight,scenario,created_at_utc
+temp_anomaly,0.2,ssp5_8_5,2026-07-21T07:04:53.920440+00:00
+extreme_heat_days,0.7,ssp5_8_5,2026-07-21T07:04:53.920461+00:00
+heatwave_duration,0.1,ssp5_8_5,2026-07-21T07:04:53.920466+00:00

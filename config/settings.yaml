@@ -1,0 +1,102 @@
+project:
+  name: "Climate-Adjusted Mortality — Notebook Suite"
+  timezone: "Europe/Zurich"
+  currency: "EUR"
+  version: "0.1.0"
+
+run:
+  seed: 42
+  output_dir: "../outputs"
+  data_dir: "../data"
+  overwrite_outputs: false
+
+scope:
+  geography_level: "country"    
+  geographies:                  
+    - "FR"
+    - "IT"
+    - "ES"    
+  sex: ["male"]  
+  ages:
+    min: 20
+    max: 100
+    open_age_interval: 100
+  years:
+    hist_start: 1990
+    hist_end: 2024
+    proj_end: 2060
+
+mortality:
+  input_type: "mx"
+  mx_measure: "central_rate"   
+  smoothing:
+    enabled: true
+    method: "p_spline"         
+  lee_carter:
+    fit_method: "svd"          
+    k_t_model: "rw_drift"      
+    identifiability:
+      sum_bx: 1.0
+      sum_kt: 0.0
+
+climate:
+  hazards_core:
+    - key: "temp_anomaly"
+      units: "degC"
+      preferred_source: "Copernicus"
+    - key: "extreme_heat_days"
+      units: "days"
+      preferred_source: "Copernicus"
+    - key: "pm25"
+      units: "ug_m3"
+      preferred_source: "Copernicus"
+  hazards_optional:
+    - key: "wildfire_smoke"
+      units: "index"
+      preferred_source: "Copernicus/NOAA"
+  Ct_definition:
+    method: "weighted_sum"      
+    weights:                    
+      temp_anomaly: 0.35
+      extreme_heat_days: 0.35
+      pm25: 0.30
+  temporal_alignment:
+    aggregation: "annual"     
+    baseline_period:
+      start: 1986
+      end: 2005
+  missing_data:
+    strategy: "interpolate_then_flag"  
+    max_gap_years: 2
+
+ses:
+  enabled: true
+  segmentation_level: "area_proxy"     
+  groups: ["S1", "S2", "S3"]           
+  reference_group: "S2"
+  mapping:
+    method: "deprivation_index_terciles"
+    min_coverage_ratio: 0.85
+
+model:
+  augmented_lc:
+    include_geography: true
+    include_ses: true
+    climate_term:
+      gamma_mode: "global"       
+      lambda_mode: "geo_ses"     
+      stability_check:
+        enabled: true
+        window_years: 10
+        tolerance: 0.15          
+
+reporting:
+  figures:
+    format: "png"
+    dpi: 200
+  tables:
+    format: "csv"
+  disclosure_frameworks:
+    - "ISSB_IFRS_S2"
+    - "CSRD_ESRS"
+    - "TCFD"
