@@ -689,26 +689,10 @@ Potential enhancements include:
 
 ---
 
-## Contributing
-
-Contributions are welcome if they improve reproducibility, actuarial clarity, documentation, or validation.
-
-Recommended contribution types:
-
-- Documentation improvements
-- Additional validation checks
-- Environment and dependency files
-- Synthetic sample datasets
-- New scenario adapters
-- Additional actuarial model variants
-
-Before submitting changes, run the full notebook sequence and confirm that generated reports and manifests are internally consistent.
 
 ---
 
-## License
 
-The repository includes an MIT License. Individual notebooks and reports may also contain separate notices for textual content and source code. Review the license file and in-notebook notices before reusing or redistributing materials.
 
 ---
 
@@ -718,6 +702,4 @@ Arocha, C. and Crugnola-Humbert, J. (2026). **CC230 Toolkit: Modeling resources 
 
 ---
 
-## Professional-use reminder
 
-For actuarial applications, treat this toolkit as a transparent starting point. Before using any result in a professional opinion, valuation, pricing exercise, capital model, or disclosure process, apply your organization’s model risk management framework and the actuarial standards of practice applicable in your jurisdiction.
