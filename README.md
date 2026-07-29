@@ -698,7 +698,7 @@ Potential enhancements include:
 
 ## Suggested citation
 
-to be added
+Society of Actuaries Research Institute. Quantifying Mortality and Morbidity Impacts from Climate Risks: A Practical Framework for Decision Making. Society of Actuaries Research Institute, 2026. https://github.com/Society-of-actuaries-research-institute/CC230-Quantifying-Mortality-and-Morbidity-Impacts-From-Climate-Risks
 
 ---
 
